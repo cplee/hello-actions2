@@ -1,0 +1,8 @@
+name: basic
+on: push
+
+jobs:
+  build:
+    steps:
+    - run: echo hello world!
+
