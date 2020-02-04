@@ -6,3 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: echo hello world!
+    - run: echo hello two
+  build2:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo another one
