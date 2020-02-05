@@ -3,11 +3,13 @@ on: push
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    #runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
     - run: echo hello world!
     - run: echo hello two
   build2:
+    needs: [build]
     runs-on: ubuntu-latest
     steps:
     - run: echo another one
